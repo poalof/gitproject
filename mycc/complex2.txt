@@ -1,0 +1,41 @@
+program ComplexProgram;
+
+var
+  num: integer;
+
+function factorial(n: integer): integer;
+begin
+  if n <= 1 then begin
+    factorial := 1;
+  end
+  else begin
+    factorial := n * factorial(n - 1);
+  end;
+end;
+
+function fibonacci(n: integer): integer;
+begin
+  if n <= 2 then begin
+    fibonacci := 1;
+  end
+  else begin
+    fibonacci := fibonacci(n - 1) + fibonacci(n - 2);
+  end;
+end;
+
+procedure printFibonacciSeries(n: integer);
+var
+  i: integer;
+begin
+  for i := 1 to n do begin
+    writeln(fibonacci(i));
+  end;
+end;
+
+begin
+  num := 5;
+  writeln(factorial(num));
+
+  printFibonacciSeries(num);
+
+end.

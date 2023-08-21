@@ -1,0 +1,16 @@
+program test2;
+const
+    a = 2;
+    b = 5.3;
+    c = 8;
+    d = 4;
+begin
+    writeln(a + c);
+    writeln(b + 3.1);
+    writeln(a - b);
+    writeln(c / d);
+    writeln(c * b);
+    writeln(b * b);
+    writeln(c mod d);
+end
+.
